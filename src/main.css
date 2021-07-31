@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+}
+
+.App {
+  background-color: #fafafa;
+}
+.App .app__header {
+  border-bottom: 1px solid lightgray;
+  background-color: white;
+  padding: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.post {
+  max-width: 500px;
+  margin: 10px;
+  margin-bottom: 40px;
+  background-color: white;
+  border: 1px solid lightgray;
+}
+.post .post__header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.post .post__avatar {
+  margin-right: 10px;
+}
+.post .post__image {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+.post .post__text {
+  font-weight: normal;
+  padding: 20px;
+}/*# sourceMappingURL=main.css.map */
