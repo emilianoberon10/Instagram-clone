@@ -3,17 +3,39 @@
 }
 .App {
   background-color: #fafafa;
-  .app__header {
-    border-bottom: 1px solid lightgray;
-    background-color: white;
-    padding: 20px;
+}
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 1px solid lightgray;
+  background-color: white;
+  padding: 20px;
+  object-fit: contain;
+  .app__headerImage {
     object-fit: contain;
   }
+
+  .app__singUp {
+    display: flex;
+    flex-direction: column;
+  }
 }
+.app__logAndProfContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.app__posts {
+  display: flex;
+  justify-content: center;
+}
+
 .post {
   max-width: 500px;
-  margin: 10px;
-  margin-bottom: 40px;
+  max-width: 800px;
+  margin-bottom: 20px;
   background-color: white;
   border: 1px solid lightgray;
 
@@ -34,5 +56,36 @@
   .post__text {
     font-weight: normal;
     padding: 20px;
+  }
+  .post__comments {
+    padding: 20px;
+  }
+}
+.post__commentBox {
+  display: flex;
+  margin-top: 10px;
+  .post__input {
+    flex: 1;
+    border: none;
+    border-top: 1px solid lightgray;
+    padding: 10px;
+  }
+  .post__button {
+    flex: 0;
+    border: none;
+    color: #6082a3;
+    background-color: transparent;
+    border-top: 1px solid lightgray;
+  }
+}
+
+.imageUpload {
+  background-color: white;
+  border-top: 1px solid lightgray;
+  flex-direction: column;
+  width: 60%;
+  margin: 10px auto;
+  .progressBar {
+    width: 100%;
   }
 }
